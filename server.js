@@ -10,11 +10,11 @@ const bodyParser = require("body-parser");
 const mqtt = require("mqtt");
 const { spawn } = require("child_process");
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 const SECRET_KEY = process.env.JWT_SECRET || "luanvantotnghiep";
 // ✅ **Khởi tạo WebSocket Server**
 const WebSocket = require("ws");
-const wss = new WebSocket.Server({ port: 8081 });
+const wss = new WebSocket.Server({ port: 8080 });
 console.log("✅ WebSocket server is running on ws://localhost:8081");
 wss.on("connection", (ws) => {
   console.log("✅ New WebSocket client connected");
