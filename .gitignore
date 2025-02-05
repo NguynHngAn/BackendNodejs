@@ -1,0 +1,17 @@
+# 🛑 Bỏ qua thư mục môi trường ảo (Python venv)
+venv/
+*.pyd
+*.dll
+
+# 🛑 Bỏ qua mô hình Machine Learning lớn
+*.pkl
+*.py
+*.csv
+testing.js
+lightgbm_model.js
+*.env
+
+# 🛑 Bỏ qua cache & log file không cần thiết
+__pycache__/
+*.log
+*.cache
