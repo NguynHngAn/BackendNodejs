@@ -196,6 +196,11 @@ mqttClient.on("message", async (topic, message) => {
 });
 
 // **API**
+app.get('/', (req, res) => {
+  res.send('Hello, Azure!');
+});
+
+
 app.get("/api/get-status", (req, res) => res.status(200).json(deviceStatus));
 
 app.get("/api/get-data", authMiddleware, async (req, res) => {
